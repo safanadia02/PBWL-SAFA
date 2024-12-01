@@ -39,8 +39,48 @@
         </div>
     </nav>
 
-    <div class="container" style="margin-left: 30px;">
+    <div class="container">
         <h1>Ini Adalah Halaman Mahasiswa</h1>
+
+        {{--
+            ROWSPAN = untuk menggabungkan baris
+            COLSPAN = untuk menggabungkan kolom
+            --}}
+
+        <table class="table table-danger table-sm table-hover table-striped table-bordered text-center">
+            <thead>
+            <tbody>
+                <tr>
+                    <th>NPM</th>
+                    <th>Nama Mahasiswa</th>
+                    <th>Jenis kelamin</th>
+                    <th colspan="2">TTL</th>
+
+                </tr>
+            </tbody>
+            <tr>
+                <td>123</td>
+                <td>Safa</td>
+                <td>Perempuan</td>
+                <td>04-02-2004</td>
+                <td rowspan="3">Kota Medan</td>
+            </tr>
+            <tr>
+                <td>124</td>
+                <td>Siti</td>
+                <td>Perempuan</td>
+                <td>04-02-2004</td>
+
+            </tr>
+            <tr>
+                <td>125</td>
+                <td>Aisyah</td>
+                <td>Perempuan</td>
+                <td>04-02-2004</td>
+                >
+            </tr>
+            </thead>
+        </table>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
