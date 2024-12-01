@@ -55,31 +55,23 @@
                     <th>Nama Mahasiswa</th>
                     <th>Jenis kelamin</th>
                     <th colspan="2">TTL</th>
-
                 </tr>
-            </tbody>
-            <tr>
-                <td>123</td>
-                <td>Safa</td>
-                <td>Perempuan</td>
-                <td>04-02-2004</td>
-                <td rowspan="3">Kota Medan</td>
-            </tr>
-            <tr>
-                <td>124</td>
-                <td>Siti</td>
-                <td>Perempuan</td>
-                <td>04-02-2004</td>
-
-            </tr>
-            <tr>
-                <td>125</td>
-                <td>Aisyah</td>
-                <td>Perempuan</td>
-                <td>04-02-2004</td>
-                >
-            </tr>
             </thead>
+            </tbody>
+            <?php $nilai_awal = 0; ?>
+            @while ($nilai_awal < $jumlah)
+
+            <tr>
+                <td>{{ $npm[$nilai_awal] }}</td>
+                <td>{{ $nama[$nilai_awal] }}</td>
+                <td>Perempuan</td>
+                <td>04-02-2004</td>
+                <td>Kota Medan</td>
+            </tr>
+
+            <?php $nilai_awal++ ?>    
+            @endwhile
+        </thead>
         </table>
     </div>
 
